@@ -20,8 +20,8 @@ public class Client {
         this.getEnvoi().flush();
     }
 
-    public void afficherReponse() throws IOException {
-        System.out.println(this.getLecture().readUTF());
+    public String afficherReponse() throws IOException {
+        return this.getLecture().readUTF();
     }
 
     public void exit() throws IOException {
